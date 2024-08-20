@@ -1,0 +1,50 @@
+mark {
+    background-color: #99c5ff;
+}
+
+
+@media screen and (max-width: 599px) {
+    
+    .text-img {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 1em;
+    
+        h4{
+            line-height: 0;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .text-img {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 2em;
+    
+        h4{
+            line-height: 0;
+        }
+       
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .text-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    
+        .redesign-text {
+            width: 28%;
+        }
+    
+        .redesign-img {
+            width: 70%;
+        }
+    }
+    
+    }

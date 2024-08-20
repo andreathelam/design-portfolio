@@ -1,3 +1,16 @@
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 @media screen and (max-width: 599px) {
   .title_name {
     margin-top: 10%;
@@ -34,6 +47,17 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
   /* PROJECTS */
   .projects_container {
     background-color: #F3F3F3;
@@ -115,22 +139,6 @@
 
     }
 
-    #sdv_tile {
-      background-color: #F5B971;
-    }
-
-    #surviving2020_tile {
-      background-color: #F0B8BF;
-    }
-
-    #grow_tile {
-      background-color: #A3DDCB;
-    }
-
-    #projectcupid_tile {
-      background-color: #CFB5D0;
-    }
-
 
   }
   .graphics_row{
@@ -146,31 +154,31 @@
     padding-bottom: 20px;
 
 
-    &:active,
-    &.hover {
-      figure {
-        transform: rotateY(180deg);
-      }
-    }
+    // &:active,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
 
     figure {
-      position: relative;
+      // position: relative;
       width: 100%;
-      height: 0;
-      padding-top: 100%;
+      height: auto;
+      // padding-top: 100%;
       margin: 0;
-      transition: transform 0.3s ease-out;
-      perspective: 1000;
-      transform-style: preserve-3d;
+      // transition: transform 0.3s ease-out;
+      // perspective: 1000;
+      // transform-style: preserve-3d;
 
       img {
-        position: absolute;
+        // position: absolute;
         top: 0;
         left: 0;
-        z-index: 2;
+        // z-index: 2;
         width: 100%;
         height: 100%;
-        backface-visibility: hidden;
+        // backface-visibility: hidden;
       }
     }
 
@@ -240,6 +248,17 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
   .projects_container {
     background-color: #F3F3F3;
     width: 100%;
@@ -320,21 +339,6 @@
 
     }
 
-    #sdv_tile {
-      background-color: #F5B971;
-    }
-
-    #surviving2020_tile {
-      background-color: #F0B8BF;
-    }
-
-    #grow_tile {
-      background-color: #A3DDCB;
-    }
-
-    #projectcupid_tile {
-      background-color: #CFB5D0;
-    }
 
 
   }
@@ -352,12 +356,12 @@
     width: 32%;
 
 
-    &:active,
-    &.hover {
-      figure {
-        transform: rotateY(180deg);
-      }
-    }
+    // &:active,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
 
     figure {
       position: relative;
@@ -411,6 +415,11 @@
 }
 
 @media screen and (min-width: 992px) {
+
+  // #enlarge_img {
+  //   background-color: #000000;
+  // }
+
   .title_name {
     margin-top: 10%;
     display: block;
@@ -446,6 +455,18 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
+
   /* PROJECTS */
   .projects_container {
     background-color: #F3F3F3;
@@ -481,17 +502,17 @@
       position: relative;
       border-radius: 20px;
       height: 250px;
+      cursor: pointer;
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: contain
+        object-fit: contain;
       }
 
       &:hover .overlay {
         opacity: 1;
         visibility: visible;
-        
       }
 
       &:hover .text {
@@ -512,7 +533,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
       }
       
       .text {
@@ -526,24 +546,99 @@
 
     }
 
-    #sdv_tile {
-      background-color: #F5B971;
-    }
 
-    #surviving2020_tile {
-      background-color: #F0B8BF;
-    }
-
-    #grow_tile {
-      background-color: #A3DDCB;
-    }
-
-    #projectcupid_tile {
-      background-color: #CFB5D0;
-    }
 
 
   }
+
+  /* https://codepen.io/mathieu_fortune/pen/owMNPB */
+  .graphics_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .portfolio-single {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+
+    // &:hover,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
+
+    figure {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      margin: 0;
+      // transition: transform 0.3s ease-out;
+      // perspective: 1000;
+      // transform-style: preserve-3d;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+    }
+
+    figcaption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+      background-color: #ffffff;
+      //background-image: linear-gradient(135deg, #f7b633 0%, #F7CE68 100%);
+      word-wrap: break-word;
+
+      h4 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin: 0;
+        line-height: 1.0;
+        transform: translateY(-75%);
+        text-align: center;
+
+      }
+    }
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 20px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
   .graphics_row{
     width: 100%;
     display: flex;
@@ -557,13 +652,12 @@
     display: inline-block;
     vertical-align: top;
 
-
-    &:hover,
-    &.hover {
-      figure {
-        transform: rotateY(180deg);
-      }
-    }
+    // &:hover,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
 
     figure {
       position: relative;
@@ -630,12 +724,12 @@
     vertical-align: top;
 
 
-    &:hover,
-    &.hover {
-      figure {
-        transform: rotateY(180deg);
-      }
-    }
+    // &:hover,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
 
     figure {
       position: relative;
@@ -672,7 +766,6 @@
       transform: rotateY(180deg);
       backface-visibility: hidden;
       background-color: #ffffff;
-      //background-image: linear-gradient(135deg, #f7b633 0%, #F7CE68 100%);
       word-wrap: break-word;
 
       h4 {
@@ -687,6 +780,9 @@
       }
     }
 }
+
+
+  
 
 }
 
@@ -726,16 +822,6 @@
   animation-delay: -0.25s;
 }
 
-@keyframes dash {
-  0%,
-  50% {
-    stroke-dashoffset: 100%;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 /* https://dev.to/gscode/11-typewriter-effect-3p3c */
 
 
@@ -743,7 +829,6 @@ $slider-name: typing-slider;
 $slides: 3;
 $typing-duration: 3s;
 $tab-letters: 35 40 54; //number of characters in each paragraph
-$slider-font-size: 14px;
 $background: #f3f3f3;
 
 
@@ -767,10 +852,6 @@ $background: #f3f3f3;
   90%, to { width: 0; }
 }
 
-@keyframes slide {
-  #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
-  to { font-size: 0; letter-spacing: 0; }
-}
 
 .#{$slider-name} {
   text-align: center;
@@ -795,7 +876,7 @@ $background: #f3f3f3;
   border-left: 2px solid black;
   background-color: $background;
   animation: typing $typing-duration infinite,
-             cursor 1s infinite;
+            cursor 1s infinite;
 }
 
 @each $letters in $tab-letters {
@@ -810,6 +891,57 @@ $background: #f3f3f3;
 }
 
 
+
+@keyframes dash {
+  0%,
+  50% {
+    stroke-dashoffset: 100%;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#newworld_tile {
+  background-color: #dddddd;
+}
+
+#potions_tile {
+  background-color: #F5B971;
+}
+
+#sdv_tile {
+  background-color: #BDE9F2;
+}
+
+#warhawk_tile {
+  background-color: #BDE9F2;
+}
+
+#pollinate_tile {
+  background-color: #A9C5A8;
+}
+
+#surviving2020_tile {
+  background-color: #F0B8BF;
+}
+
+#grow_tile {
+  background-color: #A3DDCB;
+}
+
+#projectcupid_tile {
+  background-color: #CFB5D0;
+}
+
+#catgame_tile {
+  background-color: #dacfee;
+}
+
+#blank_tile {
+  background-color: #2222;
+}
 
 
 

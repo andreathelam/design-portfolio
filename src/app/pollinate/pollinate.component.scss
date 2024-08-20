@@ -1,0 +1,75 @@
+mark {
+    background-color: #bcd9bb;
+}
+
+.quotes-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.quote-box {
+    width: 45%;
+    background-color: #CCE2ED;
+    padding: 1em;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        line-height: 1em;
+        color: rgb(76, 76, 76)
+    }
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+#right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+@media screen and (max-width: 599px) {
+    .row5050 {
+        .left {
+            padding-bottom: 30px;
+        }
+        .right {
+            padding-top: 30px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px)  { }
+
+@media screen and (min-width: 992px) {
+    .row5050 {
+        .left {
+            width: 50%;
+            padding-right: 30px;
+        }
+        .right {
+            width: 50%;
+            padding-left: 30px;
+        }
+        .col {
+            width: 48%;
+        }
+        .col_img {
+            width: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        hr {
+            width:1;
+            size:600px;
+        }
+
+    }
+}

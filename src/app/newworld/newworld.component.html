@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<app-navbar></app-navbar>
+
+<body> 
+
+<div class="page_container">
+
+
+    <section class="grow_title">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/newworld/newworld_hero_big.png" alt="newworld hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/newworld/newworld_hero.png" alt="newworld hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/newworld/newworld_hero_med.png"  alt="newworld hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/newworld/newworld_hero_sm.png" alt="newworld hero" class="responsive">
+            <img src="assets/newworld/newworld_hero.png" alt="newworld hero" class="responsive">
+        </picture>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section" href="project_overview" id="project_overview">
+        <div class="col1">
+            <h5><mark><strong>OVERVIEW</strong></mark></h5>
+            <p>I spent the last two years working with Amazon Games Studio's UX/UI team, converting wireframes into pixel-perfect mockups and creating UI art assets for existing and new features. Here are a few of my projects while working on the fantasy MMORPG, New World.
+            </p>
+        </div>
+        <div class="col2">
+            <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
+            <p><strong>UI/UX Artist</strong></p>
+            <p><em>Visual Design, Iconography, Mockups</em></p>
+            <hr>
+            <p><em>May 2022 - present</em></p>
+        </div>
+    </section>
+
+    <!-- LEADERBOARDS -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #3b3b3b;">Leaderboards</h1>
+            <hr>    
+        </div>
+
+        <p>Leaderboards is new feature that encourages players to compete in various categories and modes in order to claim exclusive titles and/or rewards. I was handed the UX design document and tasked with converting the low/medium fidelity wireframes into pixel-perfect, game-ready mockups while following the New World visual style.</p>
+        <br/>
+
+        <h4><mark>Landing Page</mark></h4>
+
+            <p>Each panel will lead the player to its respective leaderboard. I went through multiple passes at the layout of the panels to determine which composition would be the most readable and visually-inviting. As a note, game designers wanted emphasis on Faction Wars and Mutated Expeditions.</p>
+    
+            <div class="row_img">
+                <div class="img_con">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_1_hires.png'} ])">
+                        <img src="assets/newworld/landing_layout_1.png" alt="landing page layout 1" class="responsive">
+                    </div>
+                </div>
+                <div class="img_con">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_3_hires.png'} ])">
+                        <img src="assets/newworld/landing_layout_3.png" alt="landing page layout 2" class="responsive">
+                    </div>
+                </div>
+                <div class="img_con">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_2_hires.png'} ])">
+                        <img src="assets/newworld/landing_layout_2.png" alt="landing page layout 3" class="responsive">
+                    </div>
+                </div>
+            </div>
+
+            <p>Utimately, we decided on a three column (1:2:1) approach as it presented the two main categories clearly and the ratio provided balance across the screen. I included bold, large imagery and icons of the subcategories with a common frame backing to tie it all together.</p>        
+
+        
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/category_select_hover.png'} ])">
+            <img src="assets/newworld/category_select_hover.png" alt="leaderboard category select screen" class="responsive">
+        </div>
+
+        <!-- <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/category_select_wire.png')">
+            <div id="wire_size_container">
+                <img id="wire_size" src="assets/newworld/category_select_wire.png" alt="leaderboard category select screen wireframe" class="responsive">
+            </div>
+        </div> -->
+
+       
+        <h4><mark>Board</mark></h4>
+        <p>This screen features all the subcategories in a the left nav menu, the leaderboard in the middle with the player’s score displayed at the bottom, and the rewards showcased on the right. Playing around with visual treatments, I used fog, particles, and thin borders/frames.
+        </p>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/spreadsheet.png'} ])">
+            <img src="assets/newworld/spreadsheet.png" alt="leaderboard board screen" class="responsive" >
+        </div>
+
+        <h4><mark>Reward Celebration</mark></h4>
+        <p>Using existing motion sequences, I put together a celebratory animation to showcase Leaderboard rewards attained by the player.
+        </p>
+
+        <div>
+            <video alt="leaderboard reward animation" width="100%" autoplay loop>
+                <source src="assets/newworld/lb_animation.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- <div class="vid_container">
+            <iframe src="https://player.vimeo.com/video/799741169?h=240ca9b3f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&autopause=0" allowfullscreen allow="autoplay" referrerpolicy="no-referrer" ></iframe>
+        </div> -->
+       
+
+        <!-- <h4><mark>Reception</mark></h4>
+        <p>When Leaderboards was released, the game saw a <strong>15% increase</strong> in daily players. Games modes such as Outpost Rush and Faction War saw a jump in players waiting in queue.</p> -->
+
+    </section>
+
+    <!-- PING SYSTEM REDESIGN -->
+    <!-- <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #3b3b3b;">Ping System UX Review</h1>
+            <hr>    
+        </div>
+
+        <p>I was tasked with a UX analysis of the game's current ping system to understand any frustrations players are facing and how it can be improved to provide smoother gameplay.</p>
+        <p>The ping system allows players to quickly communicate with other players using markers in the game world. This can be used to alert teammates to important information, such as enemy position, assistance requests, and location of loot.</p>
+        <h4><mark>Current System</mark></h4>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/current_ping.png')">
+            <img src="assets/newworld/current_ping.png" alt="leaderboard board screen" class="responsive">
+        </div>
+
+        <div class="row5050">
+            <div class="col">
+                <p>The game has 10 types of pings which reside in a wheel that players can pull up. Once making a selection, players can aim at an area in the world and the ping marker will appear, visible to others. </p>
+                <h3>Usability Issues I gathered:</h3>
+                <ul>
+                    <li><strong>Size</strong> - small and short, difficult to see in the world</li>
+                    <li><strong>Color</strong> - only two colors are used</li>
+                    <li><strong>Sounds</strong> - lack of distinct sounds to differentiate urgency</li>
+                    <li><strong>Recognition</strong> - difficulty to distingish on wheel quickly and the icon on the marker in the world is hidden unless the player hovers over it</li>
+                    <li><strong>Iconography</strong> - symbols for Move, Need Help, and Look are ambiguous</li>
+                    <li><strong>Visual Art</strong> - art style of wheel does not match the game's branding</li>
+                </ul>
+            </div>
+    
+            <div class="col_img">
+                <div id="img_cursor">
+                    <img src="assets/newworld/ping_types.png" alt="home screen" class="responsive">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <h4><mark>Exploration in Other Games</mark></h4>
+
+        <div class="row5050">
+            <div class="col_img">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/other_games.png')">
+                    <img src="assets/newworld/other_games.png" alt="home screen" class="responsive">
+                </div>
+            </div>
+            <div class="col">
+                <p><em>League of Legends, Overwatch, Apex Legends</em></p>
+                <ul>
+                    <li>Uses distinct colors for each ping type</li>
+                    <li>Ping types are labeled directly on wheel</li>
+                    <li>Markers in the world are high up and at a large, visible size</li>
+                    <li>Pings prompt a voice line to the team and shows a notification at the top right</li>
+                </ul>
+            </div>
+         
+        </div>
+        <br><br>
+
+        <h4><mark>Design Solutions</mark></h4>
+        <p>I dove deep into improvements for recognizability. Though the diamond frame provides consistency, without it, the symbols can be displayed at larger size on the ping wheel.</p>
+        <div class="col_img" style="margin: 2em;">
+            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/ping_framing.png')">
+                <img src="assets/newworld/ping_framing.png" alt="home screen" class="responsive">
+            </div>
+        </div>
+        <p>Color-coding each ping type will help with distinction, but I wanted to make sure the colors chosen would stand out against various environments in the game and also be recognizable to those with a colorblind accessiblity.</p>
+        <div id="img_cursor" style="margin: 2em;">
+            <img src="assets/newworld/ping_recolored.png" alt="home screen" class="responsive">
+        </div>
+        <div class="img5050" style="margin: 2em;">
+            <div class="img_con">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/ping_environment.png')">   
+                    <img src="assets/newworld/ping_environment.png" alt="sketch 1" class="responsive">
+                </div>
+            </div>
+            <div class="img_con">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/ping_colorblind.png')">   
+                    <img src="assets/newworld/ping_colorblind.png" alt="sketch 2" class="responsive">
+                </div>
+            </div>
+        </div>
+
+
+        <h4><mark>Changes Implemented</mark></h4>
+        <ul>
+            <li>Pings in the world will always display the ping symbol at a taller and larger size</li>
+            <li>New icons for Here, Look, Help</li>
+            <li>Remove the diamond frame behind the ping icon on the wheel but remain in world to prevent the ping from blending into the world environments</li>
+            <li>Each ping type will have its own distinct color</li>
+        </ul>
+        
+        <div class="vid_container">
+            <iframe src="https://player.vimeo.com/video/818055427?h=c61606d358&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&autopause=0" allowfullscreen allow="autoplay" referrerpolicy="no-referrer" ></iframe>
+        </div>
+
+        <h3><mark>Other Changes Proposed but not Implemented</mark></h3>
+        <p>Due to time constraints and lack of bandwidth from engineering, my full list of proposals did not fit the scope. I prioritized UX changes based on how impactful and desirable it would be for players in their gameplay, taking into account how long each task would take to implement. I hope to revisit these improvements for this system in the near future.</p>
+        <ul>
+            <li>Reduce the number of pings</li>
+                <ul>
+                    <li>Collected telemetry data discovered that players used Loot, Repair, and Someone's Here the least</li>
+                </ul>
+            <li>Add unique sounds for each ping type or voice the ping type</li>
+            <li>Include labels directly on the wheel next to each icon</li>
+            <li>Change visual treatment to fit into the game's style</li>
+        </ul>
+
+
+    </section> -->
+
+
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #3b3b3b;">UI Design Improvements</h1>
+            <hr>    
+        </div>
+
+        <p>The team began an intiative to elevate the user interface, giving it a more magical feel and improving player interaction with menus and popups. Here are a few visual redesigns of existing in-game screens that I worked on.</p>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_expedition.png'} ])">
+            <img src="assets/newworld/nw_mock_expedition.png" alt="expedition redesign" class="responsive">
+        </div>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_box_opening.png'} ])">
+            <img src="assets/newworld/nw_mock_box_opening.png" alt="box opening redesign" class="responsive">
+        </div>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_roster.png'} ])">
+            <img src="assets/newworld/nw_mock_roster.png" alt="war roster redesign" class="responsive">
+        </div>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_scoreboard.png'} ])">
+            <img src="assets/newworld/nw_mock_scoreboard.png" alt="scoreboard redesign" class="responsive">
+        </div>
+
+        <br/>
+
+    </section>
+
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #3b3b3b;">Iconography</h1>
+            <hr>    
+        </div>
+
+        <p>My other work included creating icons and visual elements for the screens.</p>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_icons_map.png'} ])">
+            <img src="assets/newworld/nw_icons_map.png" alt="box opening redesign" class="responsive">
+        </div>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_icons_item.png'} ])">
+            <img src="assets/newworld/nw_icons_item.png" alt="war roster redesign" class="responsive">
+        </div>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_drawings.png'} ])">
+            <img src="assets/newworld/nw_drawings.png" alt="scoreboard redesign" class="responsive">
+        </div>
+
+        <br/>
+
+    </section>
+
+
+
+
+
+
+
+<app-viewmoremenu></app-viewmoremenu>
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
+<app-footer></app-footer>
+
+</div>
+
+</body>
+</html>
+
+
+

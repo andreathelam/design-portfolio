@@ -1,0 +1,53 @@
+
+
+
+.modal_scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: 1000;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+
+  }
+
+  
+  .modal {
+    //background: white;
+    border-radius: 5px;
+    max-width: 70vw;
+    max-height: 90vh;
+    padding: 20px;
+    z-index: 1001;
+  }
+  
+  .modal-header {
+    
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    text-align: center;
+
+    img, video {
+      width: 100%;
+      //max-height: 100%;
+    }
+
+    .video_container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+
+  

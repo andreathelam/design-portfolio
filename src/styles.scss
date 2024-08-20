@@ -5,11 +5,50 @@ body, html {
     scroll-behavior: smooth;
   
 }
+
+.no-scroll { overflow: hidden; }
+
+#button {
+    opacity: 0.8;
+}
+#button:hover { 
+    //filter: brightness(110%); 
+    opacity: 1.0;
+}
+
+.close_btn_container {
+    width: 100%;
+    height: 5vh;
+    margin-right: 5%;
+    text-align: right;
+    object-fit: contain;
+    position: sticky;
+    top: 5%;
+
+    .close_btn {
+      width: auto;
+      height: 100%;
+      cursor: pointer;
+    }
+}
+
+  
+
+
+#img_cursor {
+    cursor: pointer;
+}
+.vid_container {
+    cursor: pointer;
+}
+
+
 /* small screen*/
 @media screen and (max-width: 599px) {
     body {
         margin: 8px 15px;
     }
+
 
 
     h1 {
@@ -29,8 +68,6 @@ body, html {
     }
     h4{
         font-family: Nunito-Italic;
-        font-style: italic;
-        letter-spacing: 1px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
@@ -63,22 +100,23 @@ body, html {
         }
         p {
             margin-top: -10px;
+            font-size:14px;
+            line-height: 1.4;
         }
     }
     .banner {
         padding-top: 80px;
         padding-bottom: 20px;
     }
+
     
 }
 
 /* medium screen*/
-@media screen and (min-width: 600px) and (max-width: 991px)  {
+@media screen and (min-width: 600px) {
     body {
         margin: 10px 30px;
     }
-
-
     h1 {
         font-family: Nunito-Bold;
         font-size: 38px;
@@ -96,8 +134,7 @@ body, html {
     }
     h4{
         font-family: Nunito-Italic;
-        font-style: italic;
-        letter-spacing: 1px;
+        font-size: 18px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
@@ -106,12 +143,12 @@ body, html {
     }
     p {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
     li {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
 
@@ -122,12 +159,16 @@ body, html {
         }
         p {
             margin-top: -10px;
+            font-size:14px;
         }
     }
     .banner {
         padding-top: 40px;
         padding-bottom: 30px;
     }
+
+  
+
 }
 
 /* big screen*/
@@ -138,6 +179,7 @@ body, html {
         margin-right: 5%;
         height: 100%;
         width: 90%;
+
     }
 
     .page_container {
@@ -146,6 +188,8 @@ body, html {
         height: 100%;
         width: 80%;
     }
+
+  
     #project_container {
         margin-left: 20%;
         margin-right: 10%;
@@ -163,26 +207,25 @@ body, html {
     }
     h3 {
         font-family: Nunito-Bold;
-        font-size: 18px;
+        font-size: 20px;
     }
     h4{
         font-family: Nunito-Italic;
-        font-style: italic;
-        font-size: 20px;
+        font-size: 22px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
-        font-size: 17px;
+        font-size: 20px;
         letter-spacing: 2px;
     }
     p {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: normal;
     }
     li {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: normal;
     }
 
@@ -238,6 +281,7 @@ body, html {
     .navmenu li a {
         text-decoration: none;
         color: black;
+        text-align: left;
         
         :hover, :active, :focus, :target{
             background-color: #FCE58C;
@@ -254,8 +298,8 @@ body, html {
       padding-top: 30px;
     }
     .banner hr {
-        margin-top: -40px;
-        margin-bottom: 50px;
+        //margin-top: -40px;
+        //margin-bottom: 50px;
     }
     #project_overview {
         display: flex;
@@ -269,6 +313,9 @@ body, html {
     #project_overview .col2 {
         width: 30%;
         margin-left: 10px;
+        p {
+            font-size:14px;
+        }
     }
     section {
         margin-bottom: 30px;
@@ -301,12 +348,227 @@ body, html {
 
 }
 
+/* large screen*/
+@media screen and (min-width: 1900px) {
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 100%;
+        width: 80%;
+    }
+
+    .page_container {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 100%;
+        width: 80%;
+    }
+
+
+    #project_container {
+        margin-left: 20%;
+        margin-right: 10%;
+        height: 100%;
+        width: 70%
+    }
+    
+    h1 {
+        font-family: Nunito-Bold;
+        font-size: 55px;
+    }
+    h2 {
+        font-family: Nunito-Bold;
+        font-size: 35px;
+    }
+    h3 {
+        font-family: Nunito-Bold;
+        font-size: 24px;
+    }
+    h4{
+        font-family: Nunito-Italic;
+        font-size: 24px;
+    }
+    h5 {
+        font-family: Nunito-ExtraBold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-family: Nunito-Regular;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    li {
+        font-family: Nunito-Regular;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+
+    #mobile_overlay {
+        display: none;
+    }
+    #mobile_header {
+        display: none;
+    }
+    #header {
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .inner_header {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0;
+    }
+    .logo_container {
+        display: table;
+        float: left;
+        height: 100%;
+    }
+    .logo_container a {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        :hover, :active {
+            background-color: #fce68c00;
+        }
+    }
+    .navmenu a:last-child {
+        padding-right: 0;
+    }
+    .navmenu {
+        float: right;
+        height: 100%;
+        display: table;
+    }
+    .navmenu li {
+        height: 100%;
+        padding: 0px 30px;
+        text-decoration: none;
+        display: table-cell;
+        font-size: 15px;
+        vertical-align: middle;
+        font-family: Nunito-SemiBold;
+        text-align: left;
+    }
+    .navmenu li a {
+        text-decoration: none;
+        color: black;
+        text-align: left;
+        
+        :hover, :active, :focus, :target{
+            background-color: #FCE58C;
+        }
+        .active {
+            background-color: #FCE58C;
+        }
+    }
+
+
+
+
+    .banner {
+      padding-top: 30px;
+    }
+    .banner hr {
+        //margin-top: -40px;
+        //margin-bottom: 50px;
+    }
+    #project_overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #project_overview .col1 {
+        width: 70%;
+        padding-right: 50px;
+    }
+    #project_overview .col2 {
+        width: 30%;
+        margin-left: 10px;
+        p {
+            font-size:20px;
+        }
+    }
+    section {
+        margin-bottom: 30px;
+    }
+    .row5050 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row5050 .col1{
+        width: 50%;
+        padding-right: 80px;
+    }
+    .row5050 .col2{
+        width: 50%;
+        padding-left: 80px;
+    }
+    .pages {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages .col {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+}
+
+/* FONTS */
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(~/assets/font/Nunito-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-Italic;
+    src: url(~/assets/font/Nunito-Italic.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url(~/assets/font/Nunito-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(~/assets/font/Nunito-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url(~/assets/font/Nunito-SemiBold.ttf) format("truetype");
+}
+strong { 
+    font-family: Nunito-Bold; 
+
+    mark & {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+
+}
+
+h4 {
+    mark & {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+}
+
+
 
 mark {
     background-color: #FCE58C;
     color: black;
 }
-
 
 .btn {
     border: none;
@@ -318,16 +580,25 @@ mark {
     width: 100%;
     height: auto;
 }
+a {
+    font-family: Nunito-SemiBold;
+    color: #003c4a;
+    text-align: center;
+    
+}
+a:hover, a:active {
+    color: #d6b121;
+    text-decoration-color: #d6b121;
+}
+.link-center {
+    //text-align: center;
+    margin-bottom: 1em;
+}
 .logo_container a {
     :hover, :active {
         background-color: #fce68c00;
     }
 }
-
-
-
-
-
 
 .viewmore {
     display: table-cell;

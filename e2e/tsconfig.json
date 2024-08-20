@@ -4,6 +4,8 @@
   "compilerOptions": {
     "outDir": "../out-tsc/e2e",
     "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
     "target": "es2018",
     "types": [
       "jasmine",

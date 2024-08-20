@@ -14,7 +14,7 @@
 
         .menu_tile {
             border-radius: 10px;
-            margin: 10px 20px;
+            margin: 10px .75em;
 
             h4 {
                 font-size: 18px;
@@ -43,7 +43,10 @@
             width: 50%;
             align-self: center;
             border-radius: 10px;
-            margin: 10px 20px;
+            margin: 10px .75em;
+            :hover {
+                cursor: pointer;
+            }
 
             h4 {
                 font-size: 18px;
@@ -55,6 +58,10 @@
 }
 
 @media screen and (min-width: 992px) {
+    .body {
+        width: 100%;
+        margin: auto;
+    }
     .container {
         padding-top: 50px;
         h4 {
@@ -71,7 +78,10 @@
         .menu_tile {
             width: 30%;
             border-radius: 10px;
-            margin: 0px 20px;
+            margin: 0px .75em;
+            :hover {
+                cursor: pointer;
+            }
 
             h4 {
                 font-size: 18px;

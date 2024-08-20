@@ -2,8 +2,15 @@
 
 <body>
     <div class="page_container">
+
         <section class="grow_title">
-            <img src="assets/surviving2020_hero.png" alt="Grow Project hero" class="responsive">
+            <picture>
+                <source media="(min-width: 1900px)" srcset="assets/s20/surviving2020_hero_big.png" alt="surviving2020_hero hero" class="responsive">
+                <source media="(min-width: 992px)" srcset="assets/s20/surviving2020_hero.png" alt="surviving2020_hero hero" class="responsive">
+                <source media="(min-width: 600px)" srcset="assets/s20/surviving2020_hero_med.png"  alt="surviving2020_hero hero" class="responsive">
+                <source media="(max-width: 599px)" srcset="assets/s20/surviving2020_hero_sm.png" alt="surviving2020_hero hero" class="responsive">
+                <img src="assets/s20/surviving2020_hero.png" alt="surviving2020_hero hero" class="responsive">
+            </picture>
         </section>
 
         <!-- PROJECT OVERVIEW -->
@@ -14,11 +21,11 @@
         </div>
         <div class="col2">
             <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
-            <p style="margin-top:-10px;"><strong>Art, Front-end Development</strong></p>
-            <p style="font-size:14px;"><em>Moodboard, Pixel Art, HTML/CSS, Javascript</em></p>
-            <p style="font-size:12px;">Team of 6 (School Project)</p>
+            <p><strong>Art, Front-end Development</strong></p>
+            <p><em>Moodboard, Pixel Art, HTML/CSS, Javascript</em></p>
+            <p>Team of 6 (School Project)</p>
             <hr>
-            <p style="font-size:14px;"><em>Jan 2021 - Mar 2021</em></p>
+            <p><em>Jan 2021 - Mar 2021</em></p>
         </div>
     </section>
 
@@ -29,7 +36,7 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>Project Requirements</strong></em></u></mark></h4>
+        <h4><mark>Project Requirements</mark></h4>
         <ul>
             <li>Access from a web browser
                 <ul>
@@ -57,11 +64,15 @@
                 </ul>
             </li>
         </ul>
-        <h4><mark><u><em><strong>Visualizing the Story</strong></em></u></mark></h4>
-        <img src="assets/surviving_board.png" width="100%">
+        <h4><mark>Visualizing the Story</mark></h4>
+        <div>
+            <img src="assets/s20/surviving_board.png" width="100%">
+        </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
-        <h4><mark><u><em><strong>Visualizing the Art</strong></em></u></mark></h4>
-        <img src="assets/surviving_moodboard.png" width="100%">
+        <h4><mark>Visualizing the Art</mark></h4>
+        <div>
+            <img src="assets/s20/surviving_moodboard.png" width="100%">
+        </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
 
     </section>
@@ -74,11 +85,13 @@
         </div>
         <div class="art">
             <div class="col1">
-                <p>All the art in the game was originally-created by our art team. The style we followed was pixel-themed to mimic the style from The Oregon Trail game. We used Aesprite, a pixel art tool, and Adobe Illustrator as the programs to design everything. During implementation, we added to the CSS stylesheet on Twine to develop the overall look of the final product.</p>
+                <p>All the art in the game was originally-created by our art team. The style we followed was pixel-themed to mimic the style from The Oregon Trail game. We used Aseprite, a pixel art tool, and Adobe Illustrator as the programs to design everything. During implementation, we added to the CSS stylesheet on Twine to develop the overall look of the final product.</p>
             </div>
 
             <div class="col2">
-                <img src="assets/surviving_art.png" alt="brand colors" width="100%">
+                <div>
+                    <img src="assets/s20/surviving_art.png" alt="brand colors" width="100%">
+                </div>
             </div>
         </div>
     </section>
@@ -90,13 +103,13 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>The Mechanics</strong></em></u></mark></h4>
+        <h4><mark><u><strong>The Mechanics</strong></u></mark></h4>
         <div class="art">
             <div class="col1">
-                <img src="assets/surviving_walkthrough.gif" alt="playthrough">
+                <img src="assets/s20/surviving_walkthrough.gif" alt="playthrough gif">
             </div>
             <div class="col2">
-                <p>While navigating randomly-generated events, players must keep track of three main resources, Health, Happiness, and Money. These events are based on many of the shared experiences and frustrations that people have gone through during the pandemic, such as "losing your job" or "making banana bread" and will increase or decrease the player's resources. Each screen consists of descriptive text and hyperlink(s) that will lead the player to the next passage.
+                <p style="margin-top: -1em;">While navigating randomly-generated events, players must keep track of three main resources, Health, Happiness, and Money. These events are based on many of the shared experiences and frustrations that people have gone through during the pandemic, such as "losing your job" or "making banana bread" and will increase or decrease the player's resources. Each screen consists of descriptive text and hyperlink(s) that will lead the player to the next passage.
         Every action the player takes gives the player a chance of receiving Covid-19, and if players run out of their resources, they also are given a loss and will need to restart the game. To survive the game, players must last multiple rounds without emptying their resources until the vaccine has developed and they can receive it.
             </p>
             </div>
@@ -106,9 +119,17 @@
             <a href="https://archmagi.itch.io/surviving-2020" target="_blank"><h4><u><em>Play Surviving2020</em></u></h4></a>
         </div>
 
-        <h4><mark><u><em><strong>Takeaways and Next Steps</strong></em></u></mark></h4>
-        <p>My team was unfamiliar with the structure of Twine, so we needed to learn and implement our game quickly while also encountering the challenges of working virtually. In this project course, we covered project management strategies, such as writing up a Work Breakdown Structure and following a Gantt Chart. I noticed a reoccurring problem was scope creep, of which we addressed through removing low-priority features or finding workarounds.</p>
-        <p>The next steps for Surviving2020 would be to conduct user testing for quality assurance and revisions. </p>
+        <h4><mark>Takeaways</mark></h4>
+        <p>My team was unfamiliar with the structure of Twine, so we needed to learn and implement our game quickly while also encountering the challenges of working virtually. In this project course, we covered project management strategies, such as writing up a Work Breakdown Structure and following a Gantt Chart. I noticed a reoccurring problem was scope creep, of which we addressed through removing low-priority features or finding workarounds. The next steps for Surviving2020 would be to conduct user testing for quality assurance and revisions. </p>
+    
+        <h4><mark>What's Next?</mark></h4>
+        <p>In different class, a few members from this team and I decided to expand on this game concept, transforming it into an open-world survival RPG. Check out our game website and the full design document below.</p>
+        <div class="link-center">
+            <a href="https://boardatthome.wixsite.com/surviving2020" target="_blank"><u><em>Surviving2020 Website</em></u></a>
+        </div>
+        <div class="link-center">
+            <a href="https://docs.google.com/document/d/1whz7U3P2VfbGuu2Lz-hmlvAHh-36QXKkAa7TWqojXJM/edit?usp=sharing" target="_blank"><u><em>Surviving2020 Game Design Document</em></u></a>
+        </div>
     </section>
 
 

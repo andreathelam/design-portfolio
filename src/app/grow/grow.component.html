@@ -21,7 +21,14 @@
 
 
     <section class="grow_title">
-        <img src="assets/grow_hero.png" alt="Grow Project hero" class="responsive">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/grow/grow_hero_big.png" alt="Grow Project hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/grow/grow_hero.png" alt="Grow Project hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/grow/grow_hero_med.png"  alt="Grow Project hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/grow/grow_hero_sm.png" alt="Grow Project hero" class="responsive">
+            <img src="assets/grow/grow_hero.png" alt="Grow Project hero" class="responsive">
+        </picture>
+
     </section>
 
     <!-- PROJECT OVERVIEW -->
@@ -30,15 +37,15 @@
             <h5><mark><strong>OVERVIEW</strong></mark></h5>
             <p>"How much water should I give her? Is the room humidity ok?" As aspiring plant owners, Lisa and I realized the difficulties of plant care, but we found that the responsibility of nuturing another living being contributed to our self-improvement and self-growth.</p>
             <p>So...we envisioned a <strong>plant delivery service</strong> with a <strong>mobile application</strong> that helps people manage and organize their plant family, along with providing the necessary information needed to care for each plant. </p>
-            <p>Grow is subscription-based service that sends customers a new plant on a set basis and provides the resources to support the optimal well-being of their plants. The goal is to cultivate <strong> feelings of empowerment</strong> through the <strong>nurturing of plants</strong>.</p>
+            <p>Grow is subscription-based service that sends customers a new plant on a set basis and <strong>provides the resources</strong> to support the optimal well-being of their plants. The goal is to cultivate <strong> feelings of empowerment</strong> through the <strong>nurturing of plants</strong>.</p>
         </div>
         <div class="col2">
             <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
-            <p style="margin-top:-10px;"><strong>Branding, UI Design</strong></p>
-            <p style="font-size:14px;"><em>Contextual Inquiry, Persona, Visual Design, Wireframes & Prototypes</em></p>
-            <p style="font-size:12px;">Team of 1 (Passion Project)</p>
+            <p><strong>Branding, Mobile UI Design</strong></p>
+            <p><em>Contextual Inquiry, Persona, Visual Design, Wireframes & Prototypes</em></p>
+            <p>Team of 1 (Passion Project)</p>
             <hr>
-            <p style="font-size:14px;"><em>May 2020</em></p>
+            <p><em>May 2020</em></p>
         </div>
     </section>
 
@@ -50,7 +57,7 @@
         </div>
 
         <p>When conducting my research, I wanted to understand the motivation behind people who are passionate about plant care and to learn how people, who own multiple plants, take care of their green family.</p>
-        <h4><mark><u><em>Method: Contextual Inquiry</em></u></mark></h4>
+        <h4><mark><u>Method: Contextual Inquiry</u></mark></h4>
         <p><em>Key Research Question</em></p>
         <h2 style="text-align: center; line-height: 1.0;"><strong><em>What challenges do people who own a lot of plants have when organizing and tracking the care for each plant?</em></strong></h2>
         <p>To design the mobile tool, I observed a participant in their daily morning plant care routine. The participant had 16 plants that were accumulated over the past year, and she had intermediate knowledge in taking care of plants.</p>
@@ -66,9 +73,9 @@
             <li>any additional notes such as best seasons for fertilization</li>
         </ul>
         <p>The participant described her process as “tedious and time-consuming” and wanted a more quick method in attaining the care instructions for her plants and organizing her plants based on categories.</p>
-        <h4><mark><u><em><strong>Persona</strong></em></u></mark></h4>
+        <h4><mark><u><strong>Persona</strong></u></mark></h4>
         <p>With what I learned from my research, I created a persona of my target user. I used this to focus the app on satisfying the user’s needs.</p>
-        <img src="assets/grow_persona.png" alt="persona for grow project" width=100%;>
+        <img src="assets/grow/grow_persona.png" alt="persona for grow project" class="responsive">
     </section>
 
     <!-- BUILDING THE STRUCTURE -->
@@ -78,10 +85,10 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>User Flow</strong></em></u></mark></h4>
-        <img src="assets/grow_user_flow.png" width="100%">
-        <h4><mark><u><em><strong>Site Map</strong></em></u></mark></h4>
-        <img src="assets/grow_sitemap.png" width="100%">
+        <h4><mark><u><strong>User Flow</strong></u></mark></h4>
+        <img src="assets/grow/grow_user_flow.png" width="100%">
+        <h4><mark><u><strong>Site Map</strong></u></mark></h4>
+        <img src="assets/grow/grow_sitemap.png" width="100%">
     </section>
 
     <!-- SKETCHING IT OUT -->
@@ -92,32 +99,32 @@
         </div>
 
         <div class="lowfi_img">
-            <img src="assets/grow_1.png" class="responsive">
-            <img src="assets/grow_2.png" class="responsive">
-            <img src="assets/grow_3.png" class="responsive">
-            <img src="assets/grow_4.png" class="responsive">
+            <img src="assets/grow/grow_1.png" class="responsive">
+            <img src="assets/grow/grow_2.png" class="responsive">
+            <img src="assets/grow/grow_3.png" class="responsive">
+            <img src="assets/grow/grow_4.png" class="responsive">
         </div>
 
-            <h4><mark><u><em><strong>Wireframes</strong></em></u></mark></h4>
+            <h4><mark><u><strong>Wireframes</strong></u></mark></h4>
         <p><em>The Pages</em></p>
         <div class="pages">
             <div class="col">
-                <img src="assets/home.png" width="50px" alt="">
+                <img src="assets/grow/home.png" width="50px" alt="">
                 <h5 style="margin-top: 0px; margin-bottom: -10px;">Home</h5>
-                <p>Discover our variety of plants and filter based on categories and levels. Clicking on each plant will lead to its plant page with further description and care instructions.</p>
+                <p>Discover a variety of plants and filter based on categories and levels. Clicking on each plant will lead to its plant page with further description and care instructions.</p>
             </div>
             <div class="col">
-                <img src="assets/favorite.png" width="50px" alt="">
+                <img src="assets/grow/favorite.png" width="50px" alt="">
                 <h5 style="margin-top: 0px; margin-bottom: -10px;">Favorites</h5>
                 <p>Showcases the user’s adopted plants. Each card displays a picture of the plant, along with its name. Clicking on each adopted plant will lead to its health page, where the user can track their care for their plant by date and time.</p>
             </div>
             <div class="col">
-                <img src="assets/family.png" width="50px" alt="">
+                <img src="assets/grow/family.png" width="50px" alt="">
                 <h5 style="margin-top: 0px; margin-bottom: -10px;">Family</h5>
                 <p>Informs the user of the plant being delivered next. Also shows a list of the other plants the user has favorited. </p>
             </div>
             <div class="col">
-                <img src="assets/user.png" width="50px" alt="">
+                <img src="assets/grow/user.png" width="50px" alt="">
                 <h5 style="margin-top: 0px; margin-bottom: -10px;">Profile</h5>
                 <p>Displays the user’s name, picture, number of adopted plants, and achievements. Also where the user can access their settings.</p>
             </div>
@@ -132,19 +139,19 @@
         </div>
         <div class="row5050">
             <div class="col1">
-                <h4><mark><u><em><strong>THE COLORS</strong></em></u></mark> - Natural, Cozy, Elegant</h4>
-                <img src="assets/grow_color.png" alt="brand colors" width="100%">
+                <h4><mark><u><strong>THE COLORS</strong></u></mark> - Natural, Cozy, Elegant</h4>
+                <img src="assets/grow/grow_color.png" alt="brand colors" width="100%">
             </div>
             <hr>
 
             <div class="col2">
-                <h4><mark><u><em><strong>THE TYPOGRAPHY</strong></em></u></mark> - Playful, Mature</h4>
-                <img src="assets/grow_fonts.png" alt="fonts" width="100%">
+                <h4><mark><u><strong>THE TYPOGRAPHY</strong></u></mark> - Playful, Mature</h4>
+                <img src="assets/grow/grow_fonts.png" alt="fonts" width="100%">
 
                 <hr style="margin-top: 50px; margin-bottom: 50px;">
 
-                <h4><mark><u><em><strong>THE LOGO & ASSETS</strong></em></u></mark> - Classy, Minimal, Chic</h4>
-                <img src="assets/grow_assets.png" alt="logo and assets" width="100%">
+                <h4><mark><u><strong>THE LOGO & ASSETS</strong></u></mark> - Classy, Minimal, Chic</h4>
+                <img src="assets/grow/grow_assets.png" alt="logo and assets" width="100%">
             </div>
         </div>
     </section>
@@ -156,14 +163,15 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>Final Mockups</strong></em></u></mark></h4>
-        <a href="https://xd.adobe.com/view/3408e6fe-8a1e-4b36-b583-87b9dff0aa19-615b/" target="_blank"><h4><u><em>Interact with my prototype</em></u></h4></a>
+        <h4><mark><u><strong>Final Mockups</strong></u></mark></h4>
         <div class="mockups">
-            <img src="assets/grow_mockups.png" alt="mockups" class="responsive">
+            <img src="assets/grow/grow_mockups.png" alt="mockups" class="responsive">
         </div>
+        <a href="https://xd.adobe.com/view/3408e6fe-8a1e-4b36-b583-87b9dff0aa19-615b/" target="_blank"><h4><u><em>Interact with my prototype</em></u></h4></a>
 
-        <h4><mark><u><em><strong>Takeaways</strong></em></u></mark></h4>
-        <p>As my first UI project, I have a clearer understanding of the design processes and the importance of user research to the final elements implemented in the design. Since this was a project that was personal to me, I am proud of the outcome. The next steps would be to carry out further testing to refine the prototypes.</p>
+
+        <h4><mark><u><strong>Takeaways</strong></u></mark></h4>
+        <p>As my first UI project, I have a clearer understanding of the design processes and the importance of user research for the final elements implemented in the design. Since this was a project that was personal to me, I am proud of the outcome. The next steps would be to carry out further testing to refine the prototypes.</p>
     </section>
 
 <app-viewmoremenu></app-viewmoremenu>

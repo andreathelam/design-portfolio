@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<app-navbar></app-navbar>
+
+<body>
+    <div class="page_container">
+
+        <section class="grow_title">
+            <picture>
+                <source media="(min-width: 1900px)" srcset="assets/catgame/catgame_hero_big.png" alt="catgame hero" class="responsive">
+                <source media="(min-width: 992px)" srcset="assets/catgame/catgame_hero.png" alt="catgame hero" class="responsive">
+                <source media="(min-width: 600px)" srcset="assets/catgame/catgame_hero_med.png"  alt="catgame hero" class="responsive">
+                <source media="(max-width: 599px)" srcset="assets/catgame/catgame_hero_sm.png" alt="catgame hero" class="responsive">
+                <img src="assets/catgame/catgame hero.png" alt="catgame hero" class="responsive">
+            </picture>
+        </section>
+
+        <!-- PROJECT OVERVIEW -->
+    <section class="section" href="project_overview" id="project_overview">
+        <div class="col1">
+            <h5><mark><strong>OVERVIEW</strong></mark></h5>
+            <p>Embark on an adventure as a mushroom cat in this 2D platformer, navigating through diverse landscapes while evading flying predators. Your mission: to catch precious mushrooms, all while harboring dreams of discovering the elusive and enchanted super shroom.</p>
+            <p>I started this project because I wanted to learn how to build the user interface of a settings menu through Unreal’s UI Designer. It quickly evolved into a full-on game development project, as I undertook the creation of all art assets and the implementation of the mechanics. This is very much still a work-in-progress, and I share my future plans for this game at the bottom of this page.</p>
+            <a id="game_link" href="https://andreathelam.itch.io/catching-shrooms" target="_blank"><p><u><strong>Download the demo here!</strong></u></p></a>
+        </div>
+        <div class="col2">
+            <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
+            <p><strong>Pixel Art, Game Development</strong></p>
+            <p><em>Unreal Engine, Aseprite</em></p>
+            <p>Passion Project</p>
+            <hr>
+            <p><em>Jan 2024 - Present</em></p>
+        </div>
+    </section>
+
+    <!-- MAIN CHARACTER -->
+    <section class="section" href="structure" id="structure">
+        <div class="banner">
+            <h1 style="color: #503e69;">Main Character</h1>
+            <hr>
+        </div>
+
+        <h4><mark>Run, pounce, climb as a mushroom cat</mark></h4>
+
+        <div class="cat_gifs">
+            <div class="box">
+                <div>
+                    <img src="assets/catgame/cat_idle.gif" alt="cat idle animation" class="responsive">
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="assets/catgame/cat_run.gif" alt="cat run animation" class="responsive">
+                </div>
+            </div><div class="box">
+                <div>
+                    <img src="assets/catgame/cat_jump.gif" alt="cat jump animation" class="responsive">
+                </div>
+            </div><div class="box">
+                <div>
+                    <img src="assets/catgame/cat_climb.gif" alt="cat climb animation" class="responsive">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <img src="assets/catgame/cat_spritesheet.png" alt="cat spritesheet" width="100%">
+        </div>
+        
+        
+
+
+    </section>
+
+        <!-- FONT AND COLORS -->
+        <section class="section" id="prototypes">
+            <div class="banner">
+                <h1 style="color: #503e69;">Font and Colors</h1>
+                <hr>
+            </div>
+    
+            <p>The game follows a purple and blue color scheme to invoke a magical, dreamy atmosphere and uses vibrant yellow as an accent color to add balance to the darker shades.</p>
+    
+            <div>
+                <img src="assets/catgame/font_colors.png" alt="game font and colors" width="100%">
+            </div>
+    
+        </section>
+    
+        <!-- USER INTERFACE -->
+        <section class="section" id="prototypes">
+            <div class="banner">
+                <h1 style="color: #503e69;">User Interface</h1>
+                <hr>
+            </div>
+    
+            <div>
+                <video alt="game settings ui walkthrough" width="100%" autoplay loop>
+                    <source src="assets/catgame/game_ui.mp4" type="video/mp4">
+                </video>
+            </div>
+    
+            <h4><mark>UI Toolkit</mark></h4>
+    
+            <div>
+                <img src="assets/catgame/ui_stylesheet.png" alt="game ui stylesheet" width="100%">
+            </div>
+    
+        </section>
+
+    <!-- BACKGROUND TO FOREGROUND -->
+    <section class="section" id="branding">
+        <div class="banner">
+            <h1 style="color: #503e69;">Background to Foreground</h1>
+            <hr>
+        </div>
+        <div>
+            <img src="assets/catgame/background_foreground.png" alt="game background to foreground layers" width="100%">
+        </div>
+
+        <h4><mark>Designing the Map</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/map_level_bg.png'} ])">
+            <img src="assets/catgame/map_level.png" alt="map level" width="100%">
+        </div>
+
+        <br>
+
+        <div class="art">
+            <div class="col1">
+                <p>I focused on layering the background and foreground elements in order to add dimension to the game environment. To create a sense of boundless wonder, I wanted each tile to pieced together seamlessly without feeling repetitive. As the player journeys through the world, they’ll notice that higher aptitudes reveal a lighter environment surrounded by clouds, while descending into the lower level unveils a darker environment. Foliage, such as grass and flowers, were added to bring more detail into the landscape.</p>
+                <p>For the interactive elements, players will discover mushrooms scattered throughout with the final mushroom hidden in a chest. Flying birds act as obstacles that the player must dodge and navigate to progress.</p>
+       
+                
+            </div>
+
+            <div class="col2">
+                <div class="col2a">
+                    <div>
+                        <img src="assets/catgame/chest_shroom.gif" alt="mushroom chest animation" width="100%">
+                    </div>
+                </div>
+                <div class="col2b">
+                    <div>
+                        <img src="assets/catgame/shroom.gif" alt="mushroom animation" width="100%">
+                    </div>
+                    <div>
+                        <img src="assets/catgame/bird.gif" alt="bird animation" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- IMPLEMENTATION IN UNREAL -->
+     <section class="section" id="prototypes">
+        <div class="banner">
+            <h1 style="color: #503e69;">Implementation in Unreal</h1>
+            <hr>
+        </div>
+
+        <p>Building this game from scratch was a challenge, but I found tutorial videos from Youtube channel, Cobra Code, to be extremely helpful with the initial setup and foundation. I also utilized the Common UI plugin to create global styles and reusable widgets. With a combination of watching videos and a lot of googling, I was able to complete a “first playable” of my game. </p>
+
+
+        <div class="art">
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/common_ui.png'} ])">
+                    <img src="assets/catgame/common_ui.png" alt="common ui files" width="100%">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/settings_widget_blueprint.png'} ])">
+                    <img src="assets/catgame/settings_widget_blueprint.png" alt="settings widget blueprint" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="art">
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/player_blueprint1.png'} ])">
+                    <img src="assets/catgame/player_blueprint1.png" alt="pawn widget blueprint" width="100%">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/player_blueprint2.png'} ])">
+                    <img src="assets/catgame/player_blueprint2.png" alt="pawn widget blueprint" width="100%">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+     <!-- GAME SCREENSHOTS -->
+     <section class="section" id="prototypes">
+        <div class="banner">
+            <h1 style="color: #503e69;">Game Screenshots</h1>
+            <hr>
+        </div>
+
+        <div class="art">
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot0.png'} ])">
+                    <img src="assets/catgame/shot0.png" alt="game screenshot" width="100%">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot1.png'} ])">
+                    <img src="assets/catgame/shot1.png" alt="game screenshot" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="art">
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot2.png'} ])">
+                    <img src="assets/catgame/shot2.png" alt="game screenshot" width="100%">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot3.png'} ])">
+                    <img src="assets/catgame/shot3.png" alt="game screenshot" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="art">
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot4.png'} ])">
+                    <img src="assets/catgame/shot4.png" alt="game screenshot" width="100%">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot5.png'} ])">
+                    <img src="assets/catgame/shot5.png" alt="game screenshot" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <p><em>Note: The settings menu is not fully functional and you will most likely encounter bugs during gameplay as this is my first time developing a game and first time using the Unreal Engine.</em></p>
+
+        <br>
+
+        <div style="text-align:center;">
+            <iframe frameborder="0" src="https://itch.io/embed/2678048" width="552" height="167"><a href="https://andreathelam.itch.io/catching-shrooms">CATching Shrooms by andreathelam</a></iframe>
+        </div>        
+        
+       
+        <h4><mark>What's Next?</mark></h4>
+        <p>My future goals include implementing functionality to the settings menu so players can adjust the game to fit their needs and adding an in-game store where players can exchange their collected mushrooms to acquire cosmetics items for their cat character. Along with that, I have a list of quality of life improvements and bug fixes that include additional sound and video effects as well as optimizing load times for a smoother gaming experience.
+        </p>
+    </section>
+
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
+<app-viewmoremenu></app-viewmoremenu>
+<app-footer></app-footer>
+
+
+    </div>
+</body>
+</html>

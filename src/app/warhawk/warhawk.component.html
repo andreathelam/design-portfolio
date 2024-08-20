@@ -1,0 +1,157 @@
+<app-navbar></app-navbar>
+
+<body>
+    <div class="page_container">
+
+        <div id="pop_up" onclick="closeImg(this)">
+            <div id="image_enlarged">
+                <img id="imgsrc" class="responsive"/>
+                <div id="close_btn">
+                    <img src="assets/close_btn.png"/>
+                </div>
+            </div>
+        </div>
+
+        <section class="grow_title">
+            <picture>
+                <source media="(min-width: 1900px)" srcset="assets/warhawk/warhawk_hero_big.png" alt="surviving2020_hero hero" class="responsive">
+                <source media="(min-width: 992px)" srcset="assets/warhawk/warhawk_hero.png" alt="surviving2020_hero hero" class="responsive">
+                <source media="(min-width: 600px)" srcset="assets/warhawk/warhawk_hero_med.png"  alt="surviving2020_hero hero" class="responsive">
+                <source media="(max-width: 599px)" srcset="assets/warhawk/warhawk_hero_sm.png" alt="surviving2020_hero hero" class="responsive">
+                <img src="assets/s20/surviving2020_hero.png" alt="warhawk_hero hero" class="responsive">
+            </picture>
+        </section>
+
+        <!-- PROJECT OVERVIEW -->
+    <section class="section" href="project_overview" id="project_overview">
+        <div class="col1">
+            <h5><mark><strong>OVERVIEW</strong></mark></h5>
+            <p>Warhawk (2007) is a multiplayer third-person shooter video game on the Playstation 3. It was one of the first shooting games I remember playing as a kid with my older brother. A few years ago, Sony took the servers offline, but the love and support around the game was so strong that the servers were revived. Going through the screens of Warhawk brought back memories and the realization of how much has changed with the user interfaces of shooting games. In this project, I wanted to explore how the game would look with a modern-day approach.            </p>
+        </div>
+        <div class="col2">
+            <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
+            <p><strong>Game UI Redesign</strong></p>
+            <!-- <p><em>Visual Design</em></p> -->
+            <p>Team of 1</p>
+            <hr>
+            <p><em>Apr 2022</em></p>
+        </div>
+    </section>
+
+    <section class="section" href="structure" id="structure">
+        <div class="banner">
+            <h1 style="color: #922929;">Join Game</h1>
+            <hr>
+        </div>
+
+        <div>
+            <div class="text-img">
+                <div class="redesign-text">
+                    <h4><strong>Original</strong></h4>
+                    <p>The style of boxes and borders is outdated. The table does not display enough information out front for the player to make a decision without having to toggle through each servers’ details.</p>
+                </div>
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/join-ori.png')">
+                        <img src="assets/warhawk/join-ori.png" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-img">
+                <div class="redesign-text">
+                    <h4><strong>Redesign</strong></h4>
+                    <p>The redesign includes an additional screen for the player to select the game mode they want to browse. That will lead them to the server list which includes the additional information of the map layout, current time, and current score. The rest of the server information could be displayed as a pop-up modal when the player clicks triangle.</p>            
+                </div>
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/play.png')">
+                        <img src="assets/warhawk/play.png" width="100%">
+                    </div>
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/join.png')">
+                        <img src="assets/warhawk/join.png" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" href="structure" id="structure">
+
+        <div class="banner">
+            <h1 style="color: #922929;">Player Customization</h1>
+            <hr>
+        </div>
+
+        <div>
+            <div class="text-img">
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/custom-ori.png')">
+                        <img src="assets/warhawk/custom-ori.png" width="100%">
+                    </div>
+                </div>
+                <div class="redesign-text">
+                    <h4><strong>Original</strong></h4>
+                    <p>The player customization settings are difficult to navigate since the player would have to toggle through and recall hundreds of different styles.</p>
+                </div>
+            </div>
+
+            <div class="text-img">
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/custom.png')">
+                        <img src="assets/warhawk/custom.png" width="100%">
+                    </div>
+                </div>
+                <div class="redesign-text">
+                    <h4><strong>Redesign</strong></h4>
+                    <p>The redesign provides a visual aid for the player to recognize the various styles. It also organizes the features into categories for a cleaner layout. </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" href="structure" id="structure">
+        <div class="banner">
+            <h1 style="color: #922929;">HUD</h1>
+            <hr>
+        </div>
+
+        <div>
+            <div class="text-img">
+                <div class="redesign-text">
+                    <h4><strong>Original</strong></h4>
+                    <p>The HUD has no visual hierarchy and the components on the screen are not clear or easy to understand.</p>
+                </div>
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/hud-ori.png')">
+                        <img src="assets/warhawk/hud-ori.png" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-img">
+                <div class="redesign-text">
+                    <h4><strong>Redesign</strong></h4>
+                    <p>The redesign places the player’s health and stats at the bottom left and the game stats at the top left. It includes a visual bar for the ammo remaining for each weapon.</p>
+                </div>
+                <div class="redesign-img">
+                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/warhawk/hud.png')">
+                        <img src="assets/warhawk/hud.png" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+ 
+
+
+<app-viewmoremenu></app-viewmoremenu>
+<app-footer></app-footer>
+
+
+    </div>
+</body>
+

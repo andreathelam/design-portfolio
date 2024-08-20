@@ -1,29 +1,36 @@
+<!DOCTYPE html>
+<html>
 <app-navbar></app-navbar>
 
 <body> 
 
 <div class="page_container">
 
-
     <section class="grow_title">
-        <img src="assets/sdv_hero.png" alt="project cupid hero" class="responsive">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/sdv/sdv_hero_big.png" alt="stardew journal hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/sdv/sdv_hero.png" alt="stardew journal hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/sdv/sdv_hero_med.png"  alt="stardew journal hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/sdv/sdv_hero_sm.png" alt="stardew journal hero" class="responsive">
+            <img src="assets/sdv/sdv_hero.png" alt="stardew journal hero" class="responsive">
+        </picture>
     </section>
 
     <!-- PROJECT OVERVIEW -->
     <section class="section" href="project_overview" id="project_overview">
         <div class="col1">
             <h5><mark><strong>OVERVIEW</strong></mark></h5>
-            <p>After a long, hard day of studying, there was one game I anxiously looked forward to playing. <strong>Stardew Valley is an open-world RPG</strong> where players play as a corporate-employee-turned-farmer. Due to the entertaining storyline and quests and adorable pixel-art, this game became my obsession but also a source of <strong>stress</strong>.</p>
+            <p><strong>Stardew Valley is an open-world RPG</strong> where players play as a corporate-employee-turned-farmer that has inherited their grandfather’s land in Pelican Town. The entertaining storyline and quests and adorable pixel-art sucked me in, and soon, this game became my obsession but also a source of <strong>stress</strong>.</p>
             <p>As a virgo-rising, I had the urge to <strong>plan every activity and detail</strong> of my days within the game. However, each day was only 15 minutes long in real-time, so this resulted in many <strong>unorganized scribbles on post-it notes</strong> and me frantically googling the hours of Robin’s shop before time was up. So, I wanted to see if other players faced the same problems as me and to figure out a solution.</p>
             <p><strong>Stardew Journal is a management app tool</strong> specifically to help players <strong>plan and manage their gameplay</strong>. The goal is to gather all Stardew Valley <strong>materials and information in one place</strong> for users to easily personalize and <strong>create lists</strong> that cater towards their needs.</p>
         </div>
         <div class="col2">
             <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
-            <p style="margin-top:-10px;"><strong>App UI Design</strong></p>
-            <p style="font-size:14px;"><em>Survey, Personas, Task Flows, Visual Design, Wireframes & Prototypes</em></p>
-            <p style="font-size:12px;">Team of 1 (Passion Project)</p>
+            <p><strong>Mobile UI Design</strong></p>
+            <p><em>Survey, Personas, Task Flows, Visual Design, Wireframes & Prototypes</em></p>
+            <p>Team of 1 (Passion Project)</p>
             <hr>
-            <p style="font-size:14px;"><em>Mar 2021</em></p>
+            <p><em>Mar 2021</em></p>
         </div>
     </section>
 
@@ -34,27 +41,33 @@
             <hr>    
         </div>
 
-        <h4><mark><u><em>Survey</em></u></mark></h4>
+        <h4><mark>Survey</mark></h4>
         <p>To understand the perspectives and needs from other players, I conducted a survey and posted it on the Stardew Valley subreddit. The responses I received covered a wide range of players from the console, mobile, and pc platforms and from people who have been playing for 2 months to 4 years. </p>
         <h3>What I learned from the Survey</h3>
-        <img src="assets/sdv_survey.png" alt="survey stats" class="responsive">
+        <img src="assets/sdv/sdv_survey.png" alt="survey stats" class="responsive">
         <br>
-        <h4><mark><u><em>Personas</em></u></mark></h4>
+        <h4><mark>Personas</mark></h4>
         <p>Asking for the processes players used when planning their tasks and managing their farms, I categorized the responses into 3 general groups based on what aspect of the game is focused on and the players’ needs. These are the crafted personas.</p>        
         <div class="sdv_personas">
             <div class="box">
-                <img src="assets/persona_scheduler.png" alt="scheduler persona" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_scheduler.png'} ])">  
+                    <img src="assets/sdv/persona_scheduler.png" alt="scheduler persona" class="responsive">
+                </div>
             </div>
             <div class="box">
-                <img src="assets/persona_friend.png" alt="friend persona" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_friend.png'} ])">  
+                    <img src="assets/sdv/persona_friend.png" alt="friend persona" class="responsive">
+                </div>
             </div>
             <div class="box">
-                <img src="assets/persona_forgetful.png" alt="forgetful persona" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_forgetful.png'} ])">  
+                    <img src="assets/sdv/persona_forgetful.png" alt="forgetful persona" class="responsive">
+                </div>
             </div>
         </div>
         <br>
         <h3>What I learned from the Personas</h3>
-        <p>With so many aspects of the game players can focus on, there were a variety of wants and needs. However, the most common need was the use of lists to plan and organize their gameplay. Therefore, I focused on incorporating the ability to create multiple types of lists and the flexibility to group and customize those lists.</p>
+        <p>With so many aspects of the game players can focus on, there were a variety of wants and needs. However, the most common need was the use of lists to plan and organize their gameplay. Therefore, I focused on incorporating the ability to create multiple types of lists and the flexibility to group and customize those lists. Moreover, nearly all survey participants referred to the Stardew Wiki page for gameplay information such as bundle items and NPC likes/dislikes; therefore, I planned to include that information directly on the application.</p>
     </section>
 
     <!-- BUILDING THE STRUCTURE -->
@@ -64,14 +77,14 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>Task Flow</strong></em></u></mark></h4>
+        <h4><mark>Task Flow</mark></h4>
         <p>By visualizing the tasks the user should be able to do when using the application, I created two task flows to identify and understand how the user would navigate through Stardew Journal.
-            This acted as a guide for determining the functional requirements and the navigational links for the wireframes and provided a basis for our user testing.
+            This acted as a guide for determining the functional requirements and the navigational links for the wireframes.
         </p>
         <h3>Create a new list and add it to a folder</h3>
-        <img src="assets/sdv_listtask.png" alt="task flow for creating lists" class="responsive">
+        <img src="assets/sdv/sdv_listtask.png" alt="task flow for creating lists" class="responsive">
         <h3>Add a widget to the home screen</h3>
-        <img src="assets/sdv_widgettask.png" alt="task flow for creating lists" class="responsive">
+        <img src="assets/sdv/sdv_widgettask.png" alt="task flow for creating lists" class="responsive">
 
 
     </section>
@@ -83,37 +96,37 @@
             <hr> 
         </div>
 
-        <h4><mark><u><em><strong>Requirements</strong></em></u></mark></h4>
+        <h4><mark>Requirements</mark></h4>
         <ul>
             <li>Widgets Interface
                 <ul>
-                    <li>Users can choose from a set list of templates (community bundles, characters, etc) to add to their home view or add their own lists as a widget.</li>
+                    <li>The user can choose from a set list of templates (community bundles, characters, etc) to add to their home view or to add their own lists as a widget.</li>
                 </ul>
             </li>
             <li>Calendar View
                 <ul>
-                    <li>The Calendar view will include birthdays and festival dates from each season. User will also be able to add notes onto the calendar.</li>
+                    <li>The Calendar view will include birthdays and festival dates from each season. The user will also be able to add notes onto the calendar.</li>
                 </ul>
             </li>
             <li>Create lists of multiple types
                 <ul>
-                    <li>Users will have the option to create different kinds of lists. They will be able to choose from checklists, bullets, and numbered. These lists will include a title and the folder it’s in.</li>
+                    <li>The user will have the option to create different kinds of lists, chooseing from checklists, bullets, and numbered. These lists will include a title and the folder it’s in.</li>
                 </ul>
             </li>
             <li>Folder and subfolders
                 <ul>
-                    <li>Users will be able to place their lists in folders and sub-folders for organization.</li>
+                    <li>The user will be able to place their lists in folders and sub-folders for organization.</li>
                 </ul>
             </li>
             <li>Reminders
                 <ul>
-                    <li>Users will be able to add to the reminders lists that will be easily accessible from the tab menu</li>
+                    <li>The user will be able to add to the reminders lists that will be easily accessible from the tab menu</li>
                 </ul>
             </li>
         </ul>
         <br>
-        <h4><mark><u><em><strong>Low-Fi Wireframes</strong></em></u></mark></h4>
-        <img src="assets/sdv_lowfi.png" alt="project cupid wireframes" class="responsive">
+        <h4><mark>Low-Fi Wireframes</mark></h4>
+        <img src="assets/sdv/sdv_lowfi.png" alt="project cupid wireframes" class="responsive">
 
     
     </section>
@@ -127,19 +140,19 @@
         <p>When creating the brand, I wanted to incorporate the cute, pixel art style from the game, along with a conventional feel of writing in a journal or notebook. I transformed line art icons into a pixelated version and included artwork from the game.</p>
         <div class="row5050">
             <div class="left">                
-                <h4><mark><u><em><strong>THE LOGOS & ASSETS</strong></em></u></mark> - Retro, Familiar</h4>
-                <img src="assets/sdv_assets.png" alt="brand colors" class="responsive">
+                <h4><mark>THE LOGOS & ASSETS</mark> - Retro, Familiar</h4>
+                <img src="assets/sdv/sdv_assets.png" alt="brand colors" class="responsive">
             </div>
             <hr>
 
             <div class="right">
-                <h4><mark><u><em><strong>THE TYPOGRAPHY</strong></em></u></mark> - 8-bit, Old-fashioned</h4>
-                <img src="assets/sdv_font.png" alt="fonts" >
+                <h4><mark>THE TYPOGRAPHY</mark> - 8-bit, Old-fashioned</h4>
+                <img src="assets/sdv/sdv_font.png" alt="fonts" >
 
                 <hr style="margin-top: 50px; margin-bottom: 50px;">
 
-                <h4><mark><u><em><strong>THE COLORS</strong></em></u></mark> - Playful, Fun, Mellow</h4>
-                <img src="assets/sdv_colors.png" alt="logo and assets"  class="responsive">
+                <h4><mark>THE COLORS</mark> - Playful, Fun, Mellow</h4>
+                <img src="assets/sdv/sdv_colors.png" alt="logo and assets"  class="responsive">
             </div>
         </div>
     </section>
@@ -151,49 +164,57 @@
             <hr>
         </div>
 
-        <h4><mark><u><em><strong>Hi-Fi Wireframes</strong></em></u></mark></h4>
+        <h4><mark>Hi-Fi Wireframes</mark></h4>
 
         <div class="row5050">
             <div class="col">
                 <h4>Widget Home Screen</h4>
-                <p>Users will be able to customize and personalize their Home screens to display easy-to-view and easy-to-access widgets for important information and lists. When making any edits, there will be a pop-up modal that will confirm their decision.</p>
+                <p>The user will be able to customize and personalize their Home screens to display easy-to-view and easy-to-access widgets for important information and lists. When making any edits, there will be a pop-up modal that will confirm their decision.</p>
             </div>
     
             <div class="col_img">
-                <img src="assets/sdv_widget.png" alt="home screen" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_widget.png'} ])">  
+                    <img src="assets/sdv/sdv_widget.png" alt="home screen" class="responsive">
+                </div>
             </div>
         </div>
 
         <div class="row5050">
             <div class="col">
                 <h4>Calendar View</h4>
-                <p>Stardew Journal will provide information such as NPCs’ birthdays and Festival days on each season’s calendar. Users will also have the ability to add their own to-dos or events onto each date.</p>
+                <p>Stardew Journal will provide information, such as NPCs’ birthdays and festival days on each season’s calendar. The user will also have the ability to add their own to-dos or events onto each date.</p>
             </div>
     
             <div class="col_img">
-                <img src="assets/sdv_cal.png" alt="calendar view" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_cal.png'} ])">  
+                    <img src="assets/sdv/sdv_cal.png" alt="calendar view" class="responsive">
+                </div>
             </div>
         </div>
 
         <div class="row5050">
             <div class="col">
                 <h4>Create Lists (Bullet, Numbered, Checkbox)</h4>
-                <p>Users will be able to create their own lists and organize them in folders. For decorative and familiarity purposes, they will also have the ability to insert icons and images of the various items from the game.</p>
+                <p>The user will be able to create their own lists and organize them in folders. For decorative and familiarity purposes, they will also have the ability to insert icons and images of the various items from the game.</p>
             </div>
     
             <div class="col_img">
-                <img src="assets/sdv_lists.png" alt="home screen" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_lists.png'} ])">  
+                    <img src="assets/sdv/sdv_lists.png" alt="home screen" class="responsive">
+                </div>
             </div>
         </div>
 
         <div class="row5050">
             <div class="col">
                 <h4>Pre-made Templates</h4>
-                <p>Users will have an option to add pre-made templates with the information of NPCs and Community Center bundles. These lists can be added into a folder or on the home screen as a widget. By providing this information, users will not need to do their research and can use these lists to record their progress. </p>
+                <p>The user will have an option to add pre-made templates with the information of NPCs and Community Center bundles. These lists can be added into a folder or on the home screen as a widget. By providing this information, the user will not need to do their own research and can use these lists to record their progress. </p>
             </div>
     
             <div class="col_img">
-                <img src="assets/sdv_templates.png" alt="home screen" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_templates.png'} ])">  
+                    <img src="assets/sdv/sdv_templates.png" alt="home screen" class="responsive">
+                </div>
             </div>
         </div>
 
@@ -201,30 +222,34 @@
         <div class="row5050">
             <div class="col">
                 <h4>Reminders</h4>
-                <p>Stardew Journal will automatically generate a list of reminders of any unchecked items from the users’ notes. Clicking on each reminder will lead them to the list.</p>
+                <p>Stardew Journal will automatically generate a list of reminders of any unchecked items from the user's notes. Clicking on each reminder will lead them to the list.</p>
             </div>
     
             <div class="col_img">
-                <img src="assets/sdv_reminders.png" alt="home screen" class="responsive">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_reminders.png'} ])">  
+                    <img src="assets/sdv/sdv_reminders.png" alt="home screen" class="responsive">
+                </div>
             </div>
         </div>
 
-        <a href="https://www.figma.com/proto/WhWaNPnq4rjOqhZF9EriDh/Stardew-Journal?node-id=88%3A1911&scaling=scale-down&page-id=67%3A700" target="_blank"><h4><u><em>Interact with my prototype</em></u></h4></a>
-       
+        <div class="link-center">
+            <a href="https://www.figma.com/proto/WhWaNPnq4rjOqhZF9EriDh/Stardew-Journal?node-id=106%3A8776&scaling=scale-down&page-id=67%3A700" target="_blank"><h4><u><em>Interact with my prototype</em></u></h4></a>
+        </div>
         
 
             <br>
-        <h4><mark><u><em><strong>Takeaways</strong></em></u></mark></h4>
-        <p>As I was transitioning the low-fi wireframes to hi-fi wireframes, I referred back to the task flows often. This taught me the importance of planning the interactions and decisions users can take in order to determine the key pages for the application. Since this application was designed to be a flexible management tool, there were many different approaches to how list data could be displayed, and the design I created was aimed to have a balance of flexibility and some structure. My next steps would be to conduct user testing to determine whether the flow of the application is understandable and familiar.
+        <h4><mark>Takeaways</mark></h4>
+        <p>As I was transitioning from the low-fi wireframes to hi-fi wireframes, I referred back to the task flows often. This taught me the importance of planning the interactions and decisions the user can take, in order to determine the key pages for the application. Since this application was designed to be a flexible management tool, there were many different approaches to how list data could be displayed, and the design I created was aimed to have a balance of flexibility and some structure. My next steps would be to conduct user testing to determine whether the flow of the application is understandable and familiar.
         </p>
     </section>
 
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
 <app-viewmoremenu></app-viewmoremenu>
-
 <app-footer></app-footer>
 
 </div>
 
 </body>
+</html>
 
 

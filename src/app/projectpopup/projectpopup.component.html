@@ -1,0 +1,32 @@
+<div class="modal_scrim" (click)="onBackdropClick($event)" *ngIf="isVisible">
+    <div class="close_btn_container">
+        <img class="close_btn" id="button" (click)="close()" src="assets/close_btn.svg">
+    </div>
+    <div class="modal" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+            <h3 style="color:white">{{ title }}</h3>
+        </div>
+
+        <div class="modal-body">
+            <div *ngFor="let item of content">
+                <div *ngIf="item.type === 'text'">
+                    <p>{{ item.value }}</p>
+                    <p></p>
+                </div>
+                <div *ngIf="item.type === 'image'" class="responsive">
+                    <img [src]="item.value">
+                    <p></p>
+                </div>
+                <div *ngIf="item.type === 'video'" class="responsive">
+                    <video autoplay loop>
+                        <source [src]="item.value" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  

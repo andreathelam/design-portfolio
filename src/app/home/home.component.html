@@ -4,8 +4,10 @@
 </head>
 
 <body>
+ 
 
 <div class="page_container">
+
 
   <div class="title_name">
     <div id="cat">
@@ -46,7 +48,7 @@
   <div class="typing-slider">
     <span class="item">UI & UX Designer </span>
     <span class="item">Graphic Designer </span>
-    <span class="item">Frontend Developer</span>
+    <span class="item">Game Artist  </span>
   </div>
 </div>
 
@@ -55,34 +57,82 @@
 <section class="projects_container" id="projects">
   <h2>Projects</h2>
   
+
   <div class="r1">
+
+
+    <div class="p1">
+      <div class="project_tile" id="newworld_tile" [routerLink]="['/new-world']">
+        <img src="assets/newworld_preview.png" alt="new world preview">
+        <div class="overlay">
+          <div class="text"><h4>New World</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>GAME UI ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;MOCKUPS&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;ICONS</li>
+      </ul>
+    </div>
+
+    <div class="p1">
+      <div class="project_tile" id="catgame_tile" [routerLink]="['/catching-shrooms']">
+        <img src="assets/catgame_preview.png" alt="CATching Shrooms game preview">
+        <div class="overlay">
+          <div class="text"><h4>CATching Shrooms</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>UNREAL GAME DEVELOPMENT&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART</li>
+      </ul>
+    </div>
+
+    
+  </div>
+
+
+  <div class="r1">
+
+    <div class="p1">
+      <div class="project_tile" id="potions_tile" [routerLink]="['/puzzling-potions']">
+        <img src="assets/potions_preview.png" width="400" alt="puzzling potions feature">
+        <div class="overlay">
+          <div class="text"><h4>Puzzling Potions</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE GAME UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PROTOTYPING</li>
+      </ul>
+    </div>
+
+    <div class="p1">
+      <div class="project_tile" id="pollinate_tile" [routerLink]="['/pollinate']">
+        <img src="assets/pollinate_preview.png" alt="pollinate preview">
+        <div class="overlay">
+          <div class="text"><h4>Pollinate</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE APP UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;1ST PLACE DESIGNATHON</li>
+      </ul>
+    </div>
+
+    
+
+  </div>
+
+  <div class="r1">
+
     <div class="p1">
       <div class="project_tile" id="sdv_tile" [routerLink]="['/stardew-journal']">
-        <img src="assets/Stardew Journal_preview.png" width="400" alt="">
+        <img src="assets/Stardew Journal_preview.png" alt="stardew preview">
         <div class="overlay">
           <div class="text"><h4>Stardew Journal</h4></div>
         </div>
       </div>
       <ul class="project_tags">
-        <li>UI/UX  /  APP DESIGN  /  BRANDING</li>
+        <li>MOBILE APP UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
       </ul>
     </div>
 
-    <div class="p1">
-      <div class="project_tile" id="grow_tile" [routerLink]="['/grow']">
-        <img src="assets/grow_preview.png" width="400" alt="surviving2020 game">
-        <div class="overlay">
-          <div class="text"><h4>grow</h4></div>
-        </div>
-      </div>
-      <ul class="project_tags">
-        <li>UI/UX  /  APP DESIGN  /  BRANDING</li>
-      </ul>
-    </div>
-    
-  </div>
-
-  <div class="r1">
     <div class="p1">
       <div class="project_tile" id="surviving2020_tile" [routerLink]="['/surviving2020']">
         <img src="assets/Surviving2020_preview.png" alt="project cupid app">
@@ -91,11 +141,23 @@
         </div>
       </div>
       <ul class="project_tags">
-        <li>GAME DESIGN  /  PIXEL ART  /  TWINE</li>
+        <li>GAME DESIGN&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;TWINE</li>
       </ul>
     </div>
 
-    <div class="p1">
+    <!-- <div class="p1">
+      <div class="project_tile" id="grow_tile" [routerLink]="['/grow']">
+        <img src="assets/grow_preview.png" width="400" alt="surviving2020 game">
+        <div class="overlay">
+          <div class="text"><h4>grow</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="p1">
       <div class="project_tile" id="projectcupid_tile" [routerLink]="['/project-cupid']">
         <img src="assets/ProjectCupid_preview.png" width="400" alt="grow app">
         <div class="overlay">
@@ -105,7 +167,13 @@
       <ul class="project_tags">
         <li>UI/UX  /  WEB DESIGN</li>
       </ul>
-    </div>
+    </div> -->
+
+    <!-- <div class="p1">
+      <div class="project_tile" id="blank_tile">
+      </div>
+   
+    </div> -->
 
 
   </div>
@@ -113,69 +181,95 @@
 
 </section>
 
-<hr style="text-align: center; margin-top:100px; margin-left:100px; margin-right:100px;">
+<hr style="text-align: center; margin-top:100px; margin-bottom:100px; margin-left:100px; margin-right:100px;">
 
 <section class="art_container" id="graphics">
-  <h2>Graphics</h2>
+  
+  <h2>Creative Explorations</h2>
   
   <div class="graphics_row">
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+    <!--div class="portfolio-single" ontouchstart="this.classList.toggle('hover');"-->
+    <div class="portfolio-single" id="img_cursor" (click)="openModal('3d Isometric Bedroom', [
+      {type: 'image', value: 'assets/playground/room.png'},
+      {type: 'image', value: 'assets/playground/room_solid.png'},
+      {type: 'image', value: 'assets/playground/room_wireframe.png'},
+      {type: 'image', value: 'assets/playground/room_closeups.png'} ])">
       <figure>
-        <img src="assets/graphics/UCHI.png" alt="University of California Holiday Invitational" />
-        <figcaption>
-          <h4>University of California Holiday Invitational</h4>
-        </figcaption>
+        <img src="assets/playground/room_thumbnail.png" alt="3d isometric room" />
       </figure>
     </div>
-    
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+  
+
+    <div class="portfolio-single" id="img_cursor"(click)="openModal('3d Bear Rig', [
+    {type: 'video', value: 'assets/playground/bear_walking_edit.mp4'},
+    {type: 'image', value: 'assets/playground/bear_front.png'},
+    {type: 'video', value: 'assets/playground/bear_jumping_edit.mp4'},
+    {type: 'image', value: 'assets/playground/bear_weights.png'} ])">
       <figure>
-        <img src="assets/graphics/summer_camps.png" alt="UCI Esports Summer Camps" />
-        <figcaption>
-          <h4>UCI Esports<br>Summer Camps</h4>
-        </figcaption>
+        <img src="assets/playground/bear_thumbnail.png"alt="3d art, rigging project" />
       </figure>
     </div>
-    
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+
+    <div class="portfolio-single" id="img_cursor" >
       <figure>
-        <img src="assets/graphics/fall_recruit.png"alt="UCI Esports Fall Recruitment" />
-        <figcaption>
-          <h4>UCI Esports<br>Fall Recruitment</h4>
-        </figcaption>
+        <a href="https://andreathelam.itch.io/duck" target="_blank"><img src="assets/playground/duck_thumbnail.png" alt="duck game" /></a>
       </figure>
     </div>
+
+
   </div>
+
+
   
   <div class="graphics_row">
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+
+    <div class="portfolio-single" id="img_cursor" (click)="openModal('Graphic Design: Esports Team Rosters', [
+    {type: 'image', value: 'assets/graphics/lol_roster_hires.png'},
+    {type: 'image', value: 'assets/graphics/ow_roster_hires.png'},
+    {type: 'image', value: 'assets/graphics/player_banner_1.png'},
+    {type: 'image', value: 'assets/graphics/player_banner_2.png'} ])">
       <figure>
-        <img src="assets/graphics/OW_nationals.png" alt="Overwatch Collegiate Championship 2021" />
+        <img src="assets/graphics/lol_roster.png" alt="League of Legends Roster"/>
         <figcaption>
-          <h4>Overwatch Collegiate Championship 2021</h4>
+          <h4>UCI Esports<br>Official Jersey</h4>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="portfolio-single" id="img_cursor" (click)="openModal('Apparel Design: Team Jersey', [
+    {type: 'image', value: 'assets/graphics/jersey_enlarged.png'},
+    {type: 'image', value: 'assets/graphics/jersey_sketch.png'} ])">
+      <figure>
+        <img src="assets/graphics/jersey.png" alt="UCI Esports Official Jersey"/>
+        <figcaption>
+          <h4>League of Legends<br>Player Banners</h4>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="portfolio-single" id="img_cursor" (click)="openModal('Graphic Design: Game Matches', [
+    {type: 'image', value: 'assets/graphics/game_day_hires.png'},
+    {type: 'image', value: 'assets/graphics/uchi_match_hires.png'},
+    {type: 'image', value: 'assets/graphics/victory_match_hires.png'} ])">
+      <figure>
+        <img src="assets/graphics/matches.png" alt="Game match graphics" />
+        <figcaption>
+          <h4>League of Legends Match Graphic</h4>
         </figcaption>
       </figure>
     </div>
     
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
-      <figure>
-        <img src="assets/graphics/esc.png" alt="Esports Conference" />
-        <figcaption>
-          <h4>Esports Conference</h4>
-        </figcaption>
-      </figure>
-    </div>
-    
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
-      
-    </div>
-  
+
+          
   </div>
+
+
 
 </section>
 
 
 </div>
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
 <app-footer></app-footer>
 </body>
 
