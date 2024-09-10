@@ -35,7 +35,7 @@ export class NewworldComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.data.changeName(["CATching Shrooms", "#dacfee", "catching-shrooms"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Pollinate", "#A9C5A8", "pollinate"], ["Stardew Journal", "#CFB5D0", "stardew-journal"])
+    this.data.changeName(["Pollinate", "#A9C5A8", "pollinate"], ["Project Cupid", "#CFB5D0", "project-cupid"], ["Stardew Journal", "#BDE9F2", "stardew-journal"], ["Grow", "#A3DDCB", "grow"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)

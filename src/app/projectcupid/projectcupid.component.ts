@@ -18,7 +18,7 @@ export class ProjectcupidComponent implements OnInit {
   constructor(private data: MenuDataService) { }
 
   ngOnInit(): void {
-    this.data.changeName(["Puzzling Potions","#F5B971", "puzzling-potions"], ["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Warhawk", "#bde9f2", "warhawk-redesign"], ["Surviving2020", "#F0B8BF", "surviving2020"])
+    this.data.changeName(["Stardew Journal", "#BDE9F2", "stardew-journal"], ["Grow", "#A3DDCB", "grow"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["New World", "#dddddd", "new-world"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
