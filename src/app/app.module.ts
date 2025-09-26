@@ -25,6 +25,7 @@ import { WebDesignComponent } from './web-design/web-design.component';
 import { NewworldComponent } from './newworld/newworld.component';
 import { CatgameComponent } from './catgame/catgame.component';
 import { ProjectpopupComponent } from './projectpopup/projectpopup.component';
+import { WartornComponent } from './wartorn/wartorn.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ProjectpopupComponent } from './projectpopup/projectpopup.component';
     NewworldComponent,
     CatgameComponent,
     ProjectpopupComponent,
+    WartornComponent,
   ],
   imports: [
     BrowserModule,

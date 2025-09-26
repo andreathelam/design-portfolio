@@ -12,6 +12,7 @@ import { PollinateComponent } from './pollinate/pollinate.component';
 import { WebDesignComponent } from './web-design/web-design.component';
 import { NewworldComponent } from './newworld/newworld.component';
 import { CatgameComponent } from './catgame/catgame.component';
+import { WartornComponent } from './wartorn/wartorn.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'pollinate', component: PollinateComponent },
   { path: 'web-design', component: WebDesignComponent },
   { path: 'new-world', component: NewworldComponent },
-  { path: 'catching-shrooms', component: CatgameComponent }
+  { path: 'catching-shrooms', component: CatgameComponent },
+  { path: 'wartorn', component: WartornComponent } 
 ];
 
 const routerOptions: ExtraOptions = {

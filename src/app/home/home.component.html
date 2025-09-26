@@ -46,9 +46,8 @@
     
 <div class="wrapper">
   <div class="typing-slider">
-    <span class="item">UI & UX Designer </span>
+    <span class="item">Product Designer </span>
     <span class="item">Graphic Designer </span>
-    <span class="item">Web Developer </span>
   </div>
 </div>
 
@@ -57,6 +56,33 @@
 <section class="projects_container" id="projects">
   <h2>Projects</h2>
   
+   <div class="r1">
+
+    <div class="p1">
+      <div class="project_tile" id="wartorn_tile" [routerLink]="['/wartorn']">
+        <img src="assets/wartorn_preview.png" width="400" alt="puzzling potions feature">
+        <div class="overlay">
+          <div class="text"><h4>Wartorn</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>GAME UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;WIREFRAMES&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;MOCKUPS</li>
+      </ul>
+    </div>
+
+    <div class="p1">
+      <div class="project_tile" id="potions_tile" [routerLink]="['/puzzling-potions']">
+        <img src="assets/potions_preview.png" width="400" alt="puzzling potions feature">
+        <div class="overlay">
+          <div class="text"><h4>Puzzling Potions</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE GAME UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PROTOTYPING</li>
+      </ul>
+    </div>
+
+  </div>
 
   <div class="r1">
 
@@ -128,37 +154,7 @@
 
   </div>
 
-  <div class="r1">
-
-    <div class="p1">
-      <div class="project_tile" id="potions_tile" [routerLink]="['/puzzling-potions']">
-        <img src="assets/potions_preview.png" width="400" alt="puzzling potions feature">
-        <div class="overlay">
-          <div class="text"><h4>Puzzling Potions</h4></div>
-        </div>
-      </div>
-      <ul class="project_tags">
-        <li>MOBILE GAME UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PROTOTYPING</li>
-      </ul>
-    </div>
-
-    <div class="p1">
-      <div class="project_tile" id="newworld_tile" [routerLink]="['/new-world']">
-        <img src="assets/newworld_preview.png" alt="new world preview">
-        <div class="overlay">
-          <div class="text"><h4>New World</h4></div>
-        </div>
-      </div>
-      <ul class="project_tags">
-        <li>GAME UI ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;MOCKUPS&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;ICONS</li>
-      </ul>
-    </div>
-
-    
-
-    
-
-  </div>
+ 
 
 
 
@@ -240,12 +236,9 @@
       </figure>
     </div>
 
-    <div class="portfolio-single" id="img_cursor" (click)="openModal('UI Redesign: Warhawk', [
-    {type: 'image', value: 'assets/graphics/play.png'},
-    {type: 'image', value: 'assets/graphics/join.png'},
-    {type: 'image', value: 'assets/graphics/hud.png'} ])">
+    <div class="portfolio-single" id="img_cursor" >
       <figure>
-        <img src="assets/graphics/warhawk.png" alt="warhawk redesign" />
+        <a href="https://andreathelam.itch.io/spooky-shop" target="_blank"><img src="assets/playground/spookyshop_thumbnail.png" alt="spooky shop game" /></a>
       </figure>
     </div>
     
