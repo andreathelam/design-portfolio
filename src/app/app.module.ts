@@ -26,6 +26,7 @@ import { NewworldComponent } from './newworld/newworld.component';
 import { CatgameComponent } from './catgame/catgame.component';
 import { ProjectpopupComponent } from './projectpopup/projectpopup.component';
 import { WartornComponent } from './wartorn/wartorn.component';
+import { ScrolltotopComponent } from './scrolltotop/scrolltotop.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { WartornComponent } from './wartorn/wartorn.component';
     CatgameComponent,
     ProjectpopupComponent,
     WartornComponent,
+    ScrolltotopComponent,
   ],
   imports: [
     BrowserModule,

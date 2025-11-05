@@ -566,12 +566,11 @@
     vertical-align: top;
     cursor: pointer;
 
-    // &:hover,
-    // &.hover {
-    //   figure {
-    //     transform: rotateY(180deg);
-    //   }
-    // }
+    &:hover {
+      figure {
+        transform: scale(1.02);
+      }
+    }
 
     figure {
       position: relative;
@@ -652,12 +651,11 @@
     display: inline-block;
     vertical-align: top;
 
-    // &:hover,
-    // &.hover {
-    //   figure {
-    //     transform: rotateY(180deg);
-    //   }
-    // }
+    &:hover {
+      figure {
+        transform: scale(1.02);
+      }
+    }
 
     figure {
       position: relative;
@@ -724,12 +722,11 @@
     vertical-align: top;
 
 
-    // &:hover,
-    // &.hover {
-    //   figure {
-    //     transform: rotateY(180deg);
-    //   }
-    // }
+    &:hover {
+      figure {
+        transform: scale(1.02);
+      }
+    }
 
     figure {
       position: relative;
