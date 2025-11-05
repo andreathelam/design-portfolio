@@ -1,4 +1,9 @@
+/* small screen */
 @media screen and (max-width: 599px) {
+    .nav_bar_container {
+        margin: 8px 0px;
+    }
+
   /* HEADER */
   .logo_container{
     display: none;
@@ -93,7 +98,13 @@
       font-size: 30px;
   }
 }
+
+/* medium screen */
 @media screen and (min-width: 600px) and (max-width: 991px) {
+    .nav_bar_container {
+        margin: 10px 0px;
+    }
+
   /* HEADER */
   .logo_container{
     display: none;
@@ -185,6 +196,25 @@
       font-size: 30px;
   }
 
+}
+
+/* big screen*/
+@media screen and (min-width: 992px) {
+
+    .nav_bar_container {
+        margin-top: 8px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 100%;
+        width: 90%;
+
+    }
+}
+
+/* large screen*/
+@media screen and (min-width: 1900px) {
+
+    
 }
 
 a.hover, a.active {
